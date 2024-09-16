@@ -10,8 +10,8 @@
                         <span class="text-[#804800]">Announcer Player</span>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mb-4">
-                        <button
-                            class="flex items-center justify-center rounded bg-[#B20000] hover:bg-[#8A0000] transition-all ease-in duration-75 h-28">
+                        <a
+                            class="flex items-center justify-center rounded bg-[#B20000] hover:bg-[#8A0000] transition-all ease-in duration-75 h-28" href="{{ route('player') }}">
                             <span class="invisible md:visible text-2xl text-[#F1F1F1]">ON</span>
                             <svg class="w-[40px] h-[40px] text-[#F1F1F1]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -22,7 +22,7 @@
 
                             <span class="invisible md:visible text-2xl text-[#F1F1F1]">AIR</span>
 
-                        </button>
+                        </a>
                         <button
                             class="flex items-center justify-center rounded bg-[#414141] hover:bg-[#787878] transition-all ease-in duration-75 h-28">
                             <span class="invisible md:visible text-2xl text-[#F1F1F1]">OFF</span>

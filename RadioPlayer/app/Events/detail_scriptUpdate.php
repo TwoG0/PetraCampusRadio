@@ -19,10 +19,15 @@ class detail_scriptUpdate implements ShouldBroadcastNow
      * Create a new event instance.
      */
     public $script;
-    public $des_script;
-    public function __construct($s)
+    public $index;
+    public $fieldindex;
+    public $cmd;
+    public function __construct($s,$i,$f,$c)
     {
         $this->script = $s;
+        $this->index = $i;
+        $this->fieldindex = $f;
+        $this->cmd = $c;
     }
 
     public function broadcastWith(): array
@@ -31,6 +36,9 @@ class detail_scriptUpdate implements ShouldBroadcastNow
 
         return [
             'scriptid' => $this->script->id,
+            'index' => $this->index,
+            'fieldindex' => $this->fieldindex,
+            'command' => $this->cmd,
         ];
     }
 

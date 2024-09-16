@@ -75,7 +75,7 @@
                                                         {{ session('renameSuccess') }}
                                                     @endif
                                                     <button
-                                                        @click="     = false; document.getElementById('folderNameInput{{ $folder->id }}').value = '{{ $folder->name }}';"
+                                                        @click="   renameModal  = false; document.getElementById('folderNameInput{{ $folder->id }}').value = '{{ $folder->name }}';"
                                                         wire:click="resetAllSessions()"
                                                         class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Cancel</button>
                                                     <button @click=" renameModal = true"

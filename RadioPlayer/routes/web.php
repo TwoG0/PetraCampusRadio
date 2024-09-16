@@ -12,6 +12,7 @@ Route::get('/', [HomeController::class, 'index'])->middleware('auth')->name('hom
 Route::get('/playlist', [HomeController::class, 'playlist'])->middleware('auth')->name('playlistPages');
 Route::get('/script', [HomeController::class, 'script'])->middleware('auth')->name('scriptPages');
 Route::get('/editscript/{id}', [HomeController::class, 'editscript'])->middleware('auth')->name('editscriptPages');
+Route::get('/player', [HomeController::class, 'player'])->middleware('auth')->name('player');
 
 
 Route::get('login', [LoginController::class, 'loginForm'])->middleware('guest')->name('login');

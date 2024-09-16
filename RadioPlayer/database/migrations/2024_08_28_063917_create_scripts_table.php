@@ -16,7 +16,7 @@ return new class extends Migration
             $table->date('date');
             $table->string('producer')->nullable();
             $table->string('announcer')->nullable();
-            $table->integer('detailScript')->nullable();
+            $table->string('detailScript')->nullable();
             $table->integer('scriptprogram')->nullable();
             $table->timestamps();
         });

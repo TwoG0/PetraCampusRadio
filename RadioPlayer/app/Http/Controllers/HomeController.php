@@ -25,5 +25,9 @@ class HomeController extends Controller
     public function editscript($id){
         return view("pages.editscriptpages",['id' => $id]);
     }
+
+    public function player(){
+        return view("pages.player");
+    }
     
 }

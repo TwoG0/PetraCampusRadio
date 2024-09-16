@@ -25,10 +25,8 @@ class ScriptWire extends Component
 
        $newscript= new script();
        $newscript->date = Carbon::now();
-
        
-       
-       $newscript->detailScript = $newdetailscript->id;
+       $newscript->detailScript = json_encode([$newdetailscript->id]);
        $newscript->save();
        
        $this->scriptdb = Script::orderBy('updated_at', 'desc')->get();
